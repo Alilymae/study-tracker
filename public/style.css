@@ -104,7 +104,8 @@ h1 {
 
 #progressText {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  color: #132a13;
+  font-size: 1rem;
 }
 
 #eyes {
