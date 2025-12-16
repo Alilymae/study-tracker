@@ -7,19 +7,34 @@
   </head>
   <body>
     <main>
-      <h1>Study Time Tracker</h1>
-      <div class="timer">
-        <span id="time">00:00:00</span>
-      </div>
       <div class="controls">
         <button id="startStop">Start</button>
         <button id="pausePlay" disabled>Pause</button>
         <button id="submit" disabled>Submit Today</button>
       </div>
 
+      <div class="timer">
+        <span id="time">00:00:00</span>
+      </div>
+
       <p id="todayTotal">Today: 0h 0m</p>
       <p id="status"></p>
+
+      <div class="goal">
+        <label>
+          Goal Today:
+          <input type="number" id="goalInput" min="1" placeholder="e.g. 120" />
+        </label>
+      </div>
+
+      <div class="progress-container">
+        <div id="progressBar"></div>
+      </div>
+
+      <p id="progressText">0 / 0 minutes</p>
     </main>
+    
+    <img src="./assets/eyes.png" id="eyes" alt="eyes" />
     <script src="app.js"></script>
   </body>
 </html>

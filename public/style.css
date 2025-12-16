@@ -1,35 +1,100 @@
 body {
-  font-family: system-ui, sans-serif;
-  background: #f8fafc;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: grid;
   place-items: center;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 main {
-  background: white;
+  position: relative;
+  /*background: #e9f5db4d;*/
+  z-index: 2;
   padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  width: 320px;
+  /*backdrop-filter: blur(3px);*/
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  color: #132a13;
+  align-items: center;
+}
+
 .timer {
-  font-size: 2.4rem;
+  font-size: 16rem;
   margin: 16px 0;
+  color: #f4a259;
   letter-spacing: 1px;
 }
 
 .controls button {
   margin: 6px;
   padding: 10px 16px;
-  font-size: 1rem;
+  font-size: 2rem;
+  color: #132a13;
+  background: #BFD8BD; 
+  border: 2px solid #132a13;
+  border-radius: 2rem;
+}
+
+.controls button:hover {
+  color: #2c6e49;     
+  border: 2px solid #2c6e49;   
+  transition: all 0.3s ease;
+}
+
+.controls button:disabled {
+  color: #2c6e49;          
+  border-color: #2c6e49;       
+  background: #BFD8BD; 
+  cursor: not-allowed;      
+  opacity: 0.6;             
+  transition: all 0.3s ease;
 }
 
 #status {
-  min-height: 1.2em;
-  color: #0f172a;
+  min-height: 1rem;
+  color: #2c6e49;
+}
+
+.goal {
+  margin: 1rem 0;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #8cb369;
+  transition: width 0.3s ease;
+}
+
+#progressText {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#eyes {
+  position: fixed;
+  top: 65%;
+  left: 48%;
+  width: 450px; 
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
