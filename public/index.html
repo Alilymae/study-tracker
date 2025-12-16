@@ -4,9 +4,14 @@
     <meta charset="utf-8" />
     <title>Study Time Tracker</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
   </head>
   <body>
     <main>
+      <!--TOTAL TIME-->
+      <p id="todayTotal">Today: 0h 0m</p>
+
+      <!--CONTROLS-->
       <div class="controls">
         <button id="startStop">Start</button>
         <button id="pausePlay" disabled>Pause</button>
@@ -17,7 +22,6 @@
         <span id="time">00:00:00</span>
       </div>
 
-      <p id="todayTotal">Today: 0h 0m</p>
       <p id="status"></p>
 
       <div class="goal">

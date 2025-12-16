@@ -1,5 +1,6 @@
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-image: url("./assets/bg.png");
   background-size: cover;
   background-position: center;
@@ -31,6 +32,7 @@ h1 {
   font-size: 16rem;
   margin: 16px 0;
   color: #f4a259;
+  -webkit-text-stroke: 2px #132a13bc;
   letter-spacing: 1px;
 }
 
@@ -39,33 +41,50 @@ h1 {
   padding: 10px 16px;
   font-size: 2rem;
   color: #132a13;
-  background: #BFD8BD; 
+  background: #bfd8bd;
   border: 2px solid #132a13;
   border-radius: 2rem;
 }
 
 .controls button:hover {
-  color: #2c6e49;     
-  border: 2px solid #2c6e49;   
+  color: #2c6e49;
+  border: 2px solid #2c6e49;
   transition: all 0.3s ease;
 }
 
 .controls button:disabled {
-  color: #2c6e49;          
-  border-color: #2c6e49;       
-  background: #BFD8BD; 
-  cursor: not-allowed;      
-  opacity: 0.6;             
+  color: #2c6e49;
+  border-color: #2c6e49;
+  background: #bfd8bd;
+  cursor: not-allowed;
+  opacity: 0.6;
   transition: all 0.3s ease;
 }
 
-#status {
+#todayTotal {
   min-height: 1rem;
-  color: #2c6e49;
+  color: #132a13;
+}
+
+#status {
+  font-size: 1rem;
+  color: #132a13;
+  background: #bfd8bd;
+  min-width: fit-content;
+  backdrop-filter: blur(3px);
 }
 
 .goal {
-  margin: 1rem 0;
+  margin: 1rem 0.5rem;
+  color: #132a13;
+}
+
+.goal label input {
+  color: #132a13;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background: transparent;
+  border: 2px solid #132a13;
 }
 
 .progress-container {
@@ -92,9 +111,8 @@ h1 {
   position: fixed;
   top: 65%;
   left: 48%;
-  width: 450px; 
+  width: 450px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 0;
 }
-
