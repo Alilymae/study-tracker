@@ -69,7 +69,6 @@ h1 {
 #status {
   font-size: 1rem;
   color: #132a13;
-  background: #bfd8bd;
   min-width: fit-content;
   backdrop-filter: blur(3px);
 }
